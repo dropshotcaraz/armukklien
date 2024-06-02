@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alur Pemesanan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              clifford: "#da373d",
+              saudagar: "#0088da",
+            },
+            fontSize: {
+              '8': '16px',
+              '20': '20px',
+              '24': '24px',
+              '28': '28px',
+              '32': '32px',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+  
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+
+<body class="font-poppins">
+    <header class="bg-slate-900 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center p-5"> <a href="index.html">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 1">
+        </a><div class="flex gap-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc4aa42302637e6a3bb097eadab7854b3163efca371bc9b60b3232fb1990b44?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 1" class="w-6 h-6">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/78a27e6dfb55f7636f9e721bafe5998c83d471d5f36470deda76a806717006c1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 2" class="w-6 h-6">
+          </div>
+        </div>
+      </header>
+      <div
+      class="flex flex-col items-center pb-14 mx-auto w-full bg-neutral-200 max-sm:px-10 max-w-[1428px]"
+    >
+      <div
+        class="mt-7 text-3xl font-bold tracking-wide text-center text-black max-sm:text-2xl"
+      >
+        Alur Pemesanan
+      </div>
+      <div
+        class="mt-3.5 text-2xl tracking-wide text-center text-black max-sm:text-base"
+      >
+        Wujudkan Pakaian Impian Anda dalam 6 Langkah Mudah
+      </div>
+      <div
+        class="z-10 shadow-lg items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]"
+      >
+        Desain
+      </div>
+      <div
+        class="self-start p-4 mx-auto w-full text-lg tracking-wide text-center text-black rounded-md bg-stone-300 max-w-[1100px] max-sm:text-xs"
+      >
+        Persiapkan design produk yang akan Anda pesan, seperti jenis produk, bahan,
+        design, ukuran, dan jumlah. Jika Anda mengalami kendala dalam menentukan
+        design, Rahayu Production dapat membantu Anda untuk membuat design sesuai
+        dengan konsep yang Anda inginkan.
+      </div>
+      <div
+        class="z-10 justify-center items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]"
+      >
+        Konsultasi
+      </div>
+      <div
+        class="self-start p-4 mx-auto w-full text-lg tracking-wide text-center text-black rounded-md bg-stone-300 max-w-[1100px] max-sm:text-xs"
+      >
+        Konsultasikan produk yang akan Anda pesan melalui Telepon, WhatsApp (link
+        WA), E-mail (link e-mail),  atau kunjungi workshop Rahayu Production (link
+        alamat) secara langsung. Customer Service Rahayu Production akan
+        menginformasikan harga dan estimasi waktu pengerjaan yang Anda pesan setelah
+        anda memberikan design produk tersebut.
+      </div>
+      <div
+        class="z-10 justify-center items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]"
+      >
+        Pemesanan
+      </div>
+      <div
+        class="self-start p-4 mx-auto w-full text-lg tracking-wide text-center text-black rounded-md bg-stone-300 max-w-[1100px] max-sm:text-xs"
+      >
+        Setelah melalui kesepakatan design, harga, dan estimasi waktu pengerjaan
+        pesanan, kami akan mengirimkan Invoice pemesanan melalui WhatsApp, E-mail,
+        atau secara langsung di workshop Rahayu Production. Setelah  itu kami akan
+        mengirimkan Order Form sesuai dengan spesifikasi pemesanan untuk proses
+        pengerjaan setelah kami menerima pembayaran DP sebesar 50% dari total harga
+        pesanan. 
+      </div>
+      <div
+        class="z-10 justify-center items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]"
+      >
+        Produksi
+      </div>
+      <div
+        class="self-start p-4 mx-auto w-full text-lg tracking-wide text-center text-black rounded-md bg-stone-300 max-w-[1100px] max-sm:text-xs"
+      >
+        Proses produksi dilakukan berdasarkan spesifikasi dan waktu yang telah
+        disepakati. Kami akan memberikan informasi apabila proses produksi telah
+        selesai..
+      </div>
+      <div
+        class="z-10 justify-center items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]"
+      >
+        Pelunasan
+      </div>
+      <div
+        class="self-start p-4 mx-auto w-full text-lg tracking-wide text-center text-black rounded-md bg-stone-300 max-w-[1100px] max-sm:text-xs"
+      >
+        Pelunasan dilakukan sebelum pengiriman atau pengambilan produk pesanan Anda
+        di workshop Rahayu Production.
+      </div>
+      <div
+        class="z-10 justify-center items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]"
+      >
+        Pengiriman
+      </div>
+      <div
+        class="self-start p-4 mx-auto w-full text-lg tracking-wide text-center text-black rounded-md bg-stone-300 max-w-[1100px] max-sm:text-xs"
+      >
+        Pengiriman produk pesanan Anda dilakukan melalui jasa ekspedisi dengan biaya
+        yang disesuaikan dengan jumlah produk atau Anda dapat mengambil secara
+        langsung di workshop Rahayu Production.
+      </div>
+    </div>
+    
+    <footer class="bg-slate-900 py-6 text-center text-white">
+        <p class="text-base">Created by Rahayu Production</p>
+    </footer>
+    </body>
+</html>
