@@ -1,125 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahayu Production</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              'poppins': ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              clifford: "#da373d",
-              saudagar: "#0088da",
-            },
-            fontSize: {
-              '16': '16px',
-              '20': '20px',
-              '24': '24px',
-              '28': '28px',
-              '32': '32px',
-            },
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahayu Production</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+    type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            clifford: "#da373d",
+            saudagar: "#0088da",
+          },
+          fontSize: {
+            '16': '16px',
+            '20': '20px',
+            '24': '24px',
+            '28': '28px',
+            '32': '32px',
           },
         },
-      }
-    </script>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+      },
+    }
+  </script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-      main {
-        flex: 1;
-      }
-    </style>
-  </head>
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
 
-  <body class="bg-gray-50 font-poppins">
-    <header class="bg-slate-900 sticky top-0 z-50">
-      <div class="container mx-auto flex justify-between items-center p-5"> <a href="index.html">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd</a>365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 1">
-      </a><div class="flex gap-5"> <a href="alurpesan.html">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc4aa42302637e6a3bb097eadab7854b3163efca371bc9b60b3232fb1990b44?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 1" class="w-6 h-6">
-        </a><a href="cekorder.html"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/78a27e6dfb55f7636f9e721bafe5998c83d471d5f36470deda76a806717006c1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 2" class="w-6 h-6">
+<body class="bg-gray-50 font-poppins">
+  <header class="bg-slate-900 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-5"> <a href="index.html">
+        <img loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd</a>365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+          alt="Icon 1">
+      </a>
+      <div class="flex gap-5"> <a href="alurpesan.html">
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc4aa42302637e6a3bb097eadab7854b3163efca371bc9b60b3232fb1990b44?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            alt="Icon 1" class="w-6 h-6">
+        </a><a href="cekorder.html"><img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/78a27e6dfb55f7636f9e721bafe5998c83d471d5f36470deda76a806717006c1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            alt="Icon 2" class="w-6 h-6">
         </a></div>
-      </div>
-    </header>
-    <main class="container mx-auto mt-8 max-sm:mb-8 text-center">
-      <h1 class="text-center font-semibold text-3xl text-neutral-800 max-sm:text-2xl">Selamat Datang di Portal Rahayu Production</a></h1>
-      <section class="mt-6 flex flex-wrap gap-5 justify-center">
-        <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
-          <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
-          <img loading="lazy"   srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600</div>w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+    </div>
+  </header>
+  <main class="container mx-auto mt-8 max-sm:mb-8 text-center">
+    <h1 class="text-center font-semibold text-3xl text-neutral-800 max-sm:text-2xl">Selamat Datang di Portal Rahayu
+      Production</a></h1>
+    <section class="mt-6 flex flex-wrap gap-5 justify-center">
+      <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
+        <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
+          <img loading="lazy"
+            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600</div>w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/55147167-acdf-4735-bba2-51da842746f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
             alt="Pricelist Kain" class="w-18 h-18">
-          </div>
-          <div class="ml-4">
-            <a href="menu.html"><h2 class="font-bold text-indigo-950">Katalog Produk</h2></a>
-            <div class="h-0.5 bg-amber-700 mt-1"></div>
-          </div>
-        </article>
-        <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
-          <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a994ee091522a8c3e90321a5543fbf1931d0a327f7682a5f3eeb59d71d291a08?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Check Stock Kain" class="w-18 h-18">
-          </div>
-          <div class="ml-4">
-            <h2 class="text-base font-bold text-indigo-950">Spesifikasi Produk</h2>
-            <div class="h-0.5 bg-amber-700 mt-1"></div>
-          </div>
-        </article>
-      </section>
-      <section class="mt-6 flex flex-wrap gap-5 justify-center">
-        <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
-          <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b9fec71e78cc73faf0436b28c9fee3a3738bfca8fb6f66b6e6ce7e40790bf3b?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Order Kain" class="w-18 h-18">
-          </div>
-          <div class="ml-4">
-            <a href = "alurpesan.html"><h2 class="text-base font-bold text-indigo-950">Alur Pemesanan</h2></a> 
-            <div class="h-0.5 bg-amber-700 mt-1"></div>
-          </div>
-        </article>
-        <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
-          <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
-            <img loading="lazy"   src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bed11c7ecd4d8b94bf0b8b1d04dd77b248614cdb45bdd3ad9c7191bc76d9b57?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+        </div>
+        <div class="ml-4">
+          <a href="menu.html">
+            <h2 class="font-bold text-indigo-950">Katalog Produk</h2>
+          </a>
+          <div class="h-0.5 bg-amber-700 mt-1"></div>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
+        <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a994ee091522a8c3e90321a5543fbf1931d0a327f7682a5f3eeb59d71d291a08?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            alt="Check Stock Kain" class="w-18 h-18">
+        </div>
+        <div class="ml-4">
+          <h2 class="text-base font-bold text-indigo-950">Spesifikasi Produk</h2>
+          <div class="h-0.5 bg-amber-700 mt-1"></div>
+        </div>
+      </article>
+    </section>
+    <section class="mt-6 flex flex-wrap gap-5 justify-center">
+      <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
+        <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b9fec71e78cc73faf0436b28c9fee3a3738bfca8fb6f66b6e6ce7e40790bf3b?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            alt="Order Kain" class="w-18 h-18">
+        </div>
+        <div class="ml-4">
+          <a href="alurpesan.html">
+            <h2 class="text-base font-bold text-indigo-950">Alur Pemesanan</h2>
+          </a>
+          <div class="h-0.5 bg-amber-700 mt-1"></div>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl shadow-md p-8 flex items-center w-full max-w-sm">
+        <div class="bg-slate-200 h-18 w-18 flex justify-center items-center rounded-full">
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bed11c7ecd4d8b94bf0b8b1d04dd77b248614cdb45bdd3ad9c7191bc76d9b57?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
             alt="Status Pemesanan" class="w-18 h-18">
-          </div>
-          <div class="ml-4">
-            <a href="cekorder.html"><h2 class="text-base font-bold text-indigo-950">Status Pemesanan</h2></a>
-            <div class="h-0.5 bg-amber-700 mt-1"></div>
-          </div>
-        </article>
-      </section>
-    </main>
-    <footer class="bg-slate-900 py-6 text-center text-white">
-      <p class="text-base">Created by Rahayu Production</p>
-    </footer>
-  </body>
-  <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'>
-  </script>
-  <script>
-  var wa_btnSetting = {"btnColor":"#16BE45"
-  ,"ctaText":"Pesan Sekarang!",
-  "cornerRadius":40,
-  "marginBottom":20,
-  "marginLeft":20,
-  "marginRight":20,
-  "btnPosition":"left",
-  "whatsAppNumber":"6281295036566",
-  "welcomeMessage":"Saya Mau Memesan Produk Anda!"
-  ,"zIndex":999999,"btnColorScheme":"light"};
-  window.onload = () => {
-  _waEmbed(wa_btnSetting);
+        </div>
+        <div class="ml-4">
+          <a href="cekorder.html">
+            <h2 class="text-base font-bold text-indigo-950">Status Pemesanan</h2>
+          </a>
+          <div class="h-0.5 bg-amber-700 mt-1"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="bg-slate-900 py-6 text-center text-white">
+    <p class="text-base">Created by Rahayu Production</p>
+  </footer>
+</body>
+<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'>
+</script>
+<script>
+  var wa_btnSetting = {
+    "btnColor": "#16BE45",
+    "ctaText": "Pesan Sekarang!",
+    "cornerRadius": 40,
+    "marginBottom": 20,
+    "marginLeft": 20,
+    "marginRight": 20,
+    "btnPosition": "left",
+    "whatsAppNumber": "6281295036566",
+    "welcomeMessage": "Saya Mau Memesan Produk Anda!",
+    "zIndex": 999999,
+    "btnColorScheme": "light"
   };
-  </script>
+  window.onload = () => {
+    _waEmbed(wa_btnSetting);
+  };
+</script>
+
 </html>
