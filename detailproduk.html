@@ -1,152 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahayu Production</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              'poppins': ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              clifford: "#da373d",
-              saudagar: "#0088da",
-            },
-            fontSize: {
-              '16': '16px',
-              '20': '20px',
-              '24': '24px',
-              '28': '28px',
-              '32': '32px',
-            },
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahayu Production</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+    type="image/x-icon" />
+
+  <!-- CDN flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            clifford: "#da373d",
+            saudagar: "#0088da",
+          },
+          fontSize: {
+            '16': '16px',
+            '20': '20px',
+            '24': '24px',
+            '28': '28px',
+            '32': '32px',
           },
         },
-      }
-    </script>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+      },
+    }
+  </script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-      main {
-        flex: 1;
-      }
-    </style>
-  </head>
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
 
-  <body class="bg-gray-50 font-poppins">
-    <header class="bg-slate-900 sticky top-0 z-50">
-      <div class="container mx-auto flex justify-between items-center p-5"> <a href="index.html">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 1">
-      </a><div class="flex gap-5"> <a href="alurpesan.html">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc4aa42302637e6a3bb097eadab7854b3163efca371bc9b60b3232fb1990b44?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 1" class="w-6 h-6">
-        </a><a href="cekorder.html"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/78a27e6dfb55f7636f9e721bafe5998c83d471d5f36470deda76a806717006c1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="Icon 2" class="w-6 h-6">
+<body class="bg-gray-50 font-poppins">
+  <header class="bg-slate-900 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-5"> <a href="index.html">
+        <img loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+          alt="Icon 1">
+      </a>
+      <div class="flex gap-5"> <a href="alurpesan.html">
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cc4aa42302637e6a3bb097eadab7854b3163efca371bc9b60b3232fb1990b44?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            alt="Icon 1" class="w-6 h-6">
+        </a><a href="cekorder.html"><img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/78a27e6dfb55f7636f9e721bafe5998c83d471d5f36470deda76a806717006c1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            alt="Icon 2" class="w-6 h-6">
         </a></div>
-      </div>
-    </header>
-    <main class="container items-center mx-auto mt-4 max-sm:mb-8 text-center">
-        <div class="flex max-w-full text-2xl font-semibold tracking-wide text-black w-[747px] mx-auto my-8 max-md:flex-wrap">
-        <a href="menu.html"> <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/cdf11d8ff53db961fd08fd0bb4b3a950ae3a43a8e6fca5bba1f34820844ea8a1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
-            class="shrink-0 w-8 mx-4 max-sm:ml-4 border-black border-solid aspect-[1.14] stroke-[2px] stroke-black "
-        /></a>
-        <div class="flex-wrap text-center">Detail Produk</div>
-        </div>
+    </div>
+  </header>
+
+  <main class="container items-center mx-auto mt-4 max-sm:mb-8 text-center">
+    <div
+      class="flex max-w-full text-2xl font-semibold tracking-wide text-black w-[747px] mx-auto my-8 max-md:flex-wrap">
+      <a href="menu.html"> <img loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cdf11d8ff53db961fd08fd0bb4b3a950ae3a43a8e6fca5bba1f34820844ea8a1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+          class="shrink-0 w-8 mx-4 max-sm:ml-4 border-black border-solid aspect-[1.14] stroke-[2px] stroke-black " /></a>
+      <div class="flex-wrap text-center">Detail Produk</div>
+    </div>
     <!-- component -->
     <main class="grid max-w-full mt-2 mx-auto place-content-center">
-        <div x-data="imageSlider" class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
-            <div class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
-                <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
-            </div>
-            <button @click="previous()" class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
-                <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
-            </button>
-            <button @click="forward()" class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
-                <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
-            </button>
-            <div class="relative h-80" style="width: 24rem">
-                <template x-for="(image, index) in images">
-                    <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute top-0">
-                        <img :src="image" alt="image" class="rounded-sm" />
-                    </div>
-                </template>
-            </div>
+      <div x-data="imageSlider" class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
+        <div class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
+          <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
         </div>
-        <div class="text-xl font-semibold tracking-wide items-center bg-stone-300 text-teal-950 max-w-full py-4 rounded-none md:px-16 sm:px-5 sm:m-2.5 sm:w-[461px]">
-            Geser untuk melihat koleksi lainnya
+        <button @click="previous()"
+          class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+          <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
+        </button>
+        <button @click="forward()"
+          class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+          <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
+        </button>
+        <div class="relative h-80" style="width: 24rem">
+          <template x-for="(image, index) in images">
+            <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
+              x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+              x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+              x-transition:leave-end="opacity-0" class="absolute top-0">
+              <img :src="image" alt="image" class="rounded-sm" />
+            </div>
+          </template>
         </div>
+      </div>
+      <div
+        class="text-xl font-semibold tracking-wide items-center bg-stone-300 text-teal-950 max-w-full py-4 rounded-none md:px-16 sm:px-5 sm:m-2.5 sm:w-[461px]">
+        Geser untuk melihat koleksi lainnya
+      </div>
     </main>
 
 
     <section class="w-full space-y-4 mt-5 text-center">
-        <h1 class="text-4xl font-bold tracking-wide text-black md:mt-16">Kemeja</h1>
-        <p class="text-xl font-semibold text-black">Mulai dari</p>
+      <h1 class="text-4xl font-bold tracking-wide text-black md:mt-16">Kemeja</h1>
+      <p class="text-xl font-semibold text-black">Mulai dari</p>
 
+      <div class="flex flex-col self-stretch px-12 mt-9 max-md:px-5 max-md:max-w-full max-sm:text-center">
         <div
-  class="flex flex-col self-stretch px-12 mt-9 max-md:px-5 max-md:max-w-full max-sm:text-center"
->
-  <div
-    class="flex gap-5 w-full text-lg tracking-wide text-center text-white whitespace-nowrap max-md:flex-wrap max-md:max-w-full"
-  >
-    <div class="flex flex-1 flex-auto gap-0 items-center max-sm:pl-0 pl-32">
-      <div
-        class="justify-center items-center px-16 py-7 rounded-md bg-teal-950 max-md:px-5 max-sm:ml-auto"
-      >
-        Reguler
+          class="flex gap-5 w-full text-lg tracking-wide text-center text-white whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
+          <div class="flex flex-1 flex-auto gap-0 items-center max-sm:pl-0 pl-32">
+            <div class="justify-center items-center px-16 py-7 rounded-md bg-teal-950 max-md:px-5 max-sm:ml-auto">
+              Reguler
+            </div>
+            <div
+              class="justify-center items-start px-16 py-7 rounded-none bg-neutral-400 max-md:pr-5 max-md:pl-7 max-sm:pl-6 max-sm:mr-auto">
+              120k
+            </div>
+          </div>
+          <div class="flex flex-1 flex-auto gap-0 max-sm:pr-0 pr-24">
+            <div
+              class="justify-center items-center px-16 py-7 ml-auto rounded-md bg-teal-950 max-md:px-5 max-sm:ml-auto">
+              Premium
+            </div>
+            <div
+              class="justify-center items-start px-16 py-7 bg-amber-200 rounded-none max-md:pr-5 max-md:pl-6 max-sm:mr-auto max-sm:-ml-px">
+              140k
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 font-bold text-3xl tracking-wide text-black max-md:mt-10 max-md:max-w-full max-sm:text-2xl">
+          Deskripsi
+        </div>
+        <div
+          class="pr-20 my-9 ml-32 text-2xl max-md:mr-2.5 max-md:max-w-full max-sm:pr-5 max-sm:mr-0 max-sm:-ml-px max-sm:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisc elit. Fusce at nibh non
+          ipsum tincidunt vulputate sit amet non dui. non ipsum tincidunt vulputate
+          sit amet non dui.
+        </div>
       </div>
-      <div
-        class="justify-center items-start px-16 py-7 rounded-none bg-neutral-400 max-md:pr-5 max-md:pl-7 max-sm:pl-6 max-sm:mr-auto"
-      >
-        120k
-      </div>
-    </div>
-    <div class="flex flex-1 flex-auto gap-0 max-sm:pr-0 pr-24">
-      <div
-        class="justify-center items-center px-16 py-7 ml-auto rounded-md bg-teal-950 max-md:px-5 max-sm:ml-auto"
-      >
-        Premium
-      </div>
-      <div
-        class="justify-center items-start px-16 py-7 bg-amber-200 rounded-none max-md:pr-5 max-md:pl-6 max-sm:mr-auto max-sm:-ml-px"
-      >
-        140k
-      </div>
-    </div>
-  </div>
-  <div
-    class="mt-16 font-bold text-3xl tracking-wide text-black max-md:mt-10 max-md:max-w-full max-sm:text-2xl"
-  >
-    Deskripsi
-  </div>
-  <div
-    class="pr-20 my-9 ml-32 text-2xl max-md:mr-2.5 max-md:max-w-full max-sm:pr-5 max-sm:mr-0 max-sm:-ml-px max-sm:text-base"
-  >
-    Lorem ipsum dolor sit amet, consectetur adipisc elit. Fusce at nibh non
-    ipsum tincidunt vulputate sit amet non dui. non ipsum tincidunt vulputate
-    sit amet non dui.
-  </div>
-</div>
 
-</main>
-<footer class="bg-slate-900 py-6 text-center text-white">
-  <p class="text-base">Created by Rahayu Production</p>
-</footer>
+  </main>
+
+  <footer class="bg-slate-900 py-6 text-center text-white">
+    <p class="text-base">Created by Rahayu Production</p>
+  </footer>
+
+  <!-- script flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
 
 <script>
@@ -170,18 +185,22 @@
       },
     }));
   });
-  var wa_btnSetting = {"btnColor":"#16BE45"
-  ,"ctaText":"Pesan Sekarang!",
-  "cornerRadius":40,
-  "marginBottom":20,
-  "marginLeft":20,
-  "marginRight":20,
-  "btnPosition":"left",
-  "whatsAppNumber":"6281295036566",
-  "welcomeMessage":"Saya Mau Memesan Produk Anda!"
-  ,"zIndex":999999,"btnColorScheme":"light"};
-  window.onload = () => {
-  _waEmbed(wa_btnSetting);
+  var wa_btnSetting = {
+    "btnColor": "#16BE45",
+    "ctaText": "Pesan Sekarang!",
+    "cornerRadius": 40,
+    "marginBottom": 20,
+    "marginLeft": 20,
+    "marginRight": 20,
+    "btnPosition": "left",
+    "whatsAppNumber": "6281295036566",
+    "welcomeMessage": "Saya Mau Memesan Produk Anda!",
+    "zIndex": 999999,
+    "btnColorScheme": "light"
   };
-  </script>
+  window.onload = () => {
+    _waEmbed(wa_btnSetting);
+  };
+</script>
+
 </html>
