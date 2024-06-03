@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Status Pemesanan</title>
+  <title>FAQ Dropdown</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,14 +15,13 @@
   <link rel="icon"
     href="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
     type="image/x-icon" />
-
   <!-- CDN flowbite -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"   />
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -43,6 +45,7 @@
       },
     }
   </script>
+
   <style>
     body {
       display: flex;
@@ -54,9 +57,11 @@
       flex: 1;
     }
   </style>
+
 </head>
 
-<body class="font-poppins">
+<body class="bg-gray-200 font-poppins">
+
   <header class="bg-slate-900 sticky top-0 z-50">
 
     <!-- navbar -->
@@ -105,9 +110,190 @@
   </header>
 
   <div class="flex flex-col items-center pb-20 my-auto">
+
     <div class="mx-5 mt-8 text-3xl font-bold tracking-wide text-center text-black max-sm:text-2xl"> Pesanan </div>
-    <div class="m-5 text-xl tracking-wide text-center text-black max-sm:text-base"> Mulai dari proses produksi hingga
+    <div class="m-5 text-xl max-w-[1000px] tracking-wide text-center text-black max-sm:text-base"> Mulai dari proses
+      produksi hingga
       pengiriman, pantau setiap langkah pesanan Anda. Masukkan nomor pesanan untuk melihat detailnya </div>
+
+
+    <div class="max-w-full md:w-[800px] sm:w-[400px] flex-col flex gap-5 rounded-md bg-white shadow-2xl p-7" x-data="{ isOpen: false }">
+      <!-- header -->
+      <div>
+        <div class="flex">
+          <div class="flex-col flex gap-2">
+            <p class="text-gray-500 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+              Nomor Pesanan : 6wh902aaik
+            </p>
+            <h2 class="font-bold text-xl max-w-72 max-sm:text-base max-md:text-lg">
+              Seragam SMPN 4 Bogor Azhari
+            </h2>
+          </div>
+          <div class="ms-auto">
+            <button @click="isOpen = !isOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="19" viewBox="0 0 35 19" fill="none"
+                :class="{'rotate-180': isOpen, 'rotate-0': !isOpen}"
+                class="transform transition-transform duration-300">
+                <line y1="-1.5" x2="23.418" y2="-1.5"
+                  transform="matrix(0.697355 0.716726 -0.768536 0.639806 0.806641 2.16016)" stroke="#686868"
+                  stroke-width="3" />
+                <line y1="-1.5" x2="23.418" y2="-1.5"
+                  transform="matrix(0.697355 -0.716726 0.768536 0.639806 18.0439 18.9443)" stroke="#686868"
+                  stroke-width="3" />
+                <rect x="17.1377" y="18.1064" width="0.90726" height="0.839216" rx="0.419608" fill="#686868" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-6 flex gap-3">
+          <div class="">
+            <p class="text-gray-500 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+              Pesanan diproses
+            </p>
+            <p class="text-gray-500 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+              01 Jan 2024
+            </p>
+          </div>
+          <div class="text-end ms-auto">
+            <p class="text-gray-500 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+              Estimasi pesanan selesai
+            </p>
+            <p class="text-gray-500 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+              01 Jan 2024
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- header -->
+
+      <!-- Dropdown Content -->
+      <div x-show="isOpen" x-transition class="mt-2 p-5">
+        <div class="flex flex-wrap gap-5">
+
+          <div class="flex flex-col items-center">
+            <!-- #002337 hex warna biru -->
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                <ellipse cx="8.5" cy="9" rx="8.5" ry="9" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="94" viewBox="0 0 18 94" fill="none">
+                <rect x="5.97949" y="0.56543" width="5.23233" height="83.7172" fill="#D9D9D9" />
+                <circle cx="8.59597" cy="85.4046" r="8.59597" fill="#D9D9D9" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-11 flex-1">
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+            <div>
+              <p class="text-black font-bold">
+                Estimasi pesanan selesai
+              </p>
+              <p class="text-gray-500">
+                01 Jan 2024
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
     <div
       class="flex flex-col p-4 mt-5 max-w-full text-xs rounded-md shadow-sm bg-teal-950 w-[627px] max-sm:flex max-sm:flex-col max-sm:m-2.5 max-sm:w-[300px]">
       <div class="text-xl font-bold tracking-wide text-center text-white"> Masukan nomor pesanan Anda</div>
@@ -130,6 +316,7 @@
       <!-- Input -->
 
     </div>
+
   </div>
 
   <footer class="bg-slate-900 py-6 text-center text-white">
@@ -147,7 +334,8 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
-          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Nomor pesanan yang anda masukkan tidak
+          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Nomor pesanan yang anda
+            masukkan tidak
             ditemukan</h3>
           <button data-modal-hide="popup-modal-fail" type="button"
             class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
@@ -163,6 +351,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </body>
+
 <script>
   (() => {
     const state = {};
@@ -209,5 +398,6 @@
     _waEmbed(wa_btnSetting);
   };
 </script>
+
 
 </html>
