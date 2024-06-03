@@ -55,26 +55,54 @@
 </head>
 
 <body class="font-poppins">
+
   <header class="bg-slate-900 sticky top-0 z-50">
-    <div class="container mx-auto flex items-center p-5">
-      <div>
-        <a href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M11.6626 5.31522C11.8536 5.14053 12.1464 5.14053 12.3374 5.31522L17.3374 9.88741C17.441 9.98213 17.5 10.116 17.5 10.2564V18.2649C17.5 18.541 17.2761 18.7649 17 18.7649H15.8C15.5239 18.7649 15.3 18.541 15.3 18.2649V12.559C15.3 12.2829 15.0761 12.059 14.8 12.059H9.20004C8.9239 12.059 8.70004 12.2829 8.70004 12.559V18.2649C8.70004 18.541 8.47618 18.7649 8.20004 18.7649H7.00004C6.7239 18.7649 6.50004 18.541 6.50004 18.2649V10.2564C6.50004 10.116 6.55904 9.98213 6.66262 9.88741L11.6626 5.31522ZM12.3374 2.30875C12.1464 2.13406 11.8536 2.13406 11.6626 2.30875L1.95033 11.19C1.6136 11.498 1.83145 12.059 2.28775 12.059H3.80004C4.07618 12.059 4.30004 12.2829 4.30004 12.559V20.5002C4.30004 20.7763 4.5239 21.0002 4.80004 21.0002H10.4C10.6761 21.0002 10.9 20.7763 10.9 20.5002V14.7943C10.9 14.5182 11.1239 14.2943 11.4 14.2943H12.6C12.8761 14.2943 13.1 14.5182 13.1 14.7943V20.5002C13.1 20.7763 13.3239 21.0002 13.6 21.0002H19.2C19.4761 21.0002 19.7 20.7763 19.7 20.5002V12.559C19.7 12.2829 19.9239 12.059 20.2 12.059H21.7123C22.1686 12.059 22.3864 11.498 22.0497 11.19L12.3374 2.30875Z"
-              fill="white" />
+
+    <!-- navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+      <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
+
+        <button data-collapse-toggle="navbar-dropdown" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
           </svg>
-        </a>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M11.6626 5.31522C11.8536 5.14053 12.1464 5.14053 12.3374 5.31522L17.3374 9.88741C17.441 9.98213 17.5 10.116 17.5 10.2564V18.2649C17.5 18.541 17.2761 18.7649 17 18.7649H15.8C15.5239 18.7649 15.3 18.541 15.3 18.2649V12.559C15.3 12.2829 15.0761 12.059 14.8 12.059H9.20004C8.9239 12.059 8.70004 12.2829 8.70004 12.559V18.2649C8.70004 18.541 8.47618 18.7649 8.20004 18.7649H7.00004C6.7239 18.7649 6.50004 18.541 6.50004 18.2649V10.2564C6.50004 10.116 6.55904 9.98213 6.66262 9.88741L11.6626 5.31522ZM12.3374 2.30875C12.1464 2.13406 11.8536 2.13406 11.6626 2.30875L1.95033 11.19C1.6136 11.498 1.83145 12.059 2.28775 12.059H3.80004C4.07618 12.059 4.30004 12.2829 4.30004 12.559V20.5002C4.30004 20.7763 4.5239 21.0002 4.80004 21.0002H10.4C10.6761 21.0002 10.9 20.7763 10.9 20.5002V14.7943C10.9 14.5182 11.1239 14.2943 11.4 14.2943H12.6C12.8761 14.2943 13.1 14.5182 13.1 14.7943V20.5002C13.1 20.7763 13.3239 21.0002 13.6 21.0002H19.2C19.4761 21.0002 19.7 20.7763 19.7 20.5002V12.559C19.7 12.2829 19.9239 12.059 20.2 12.059H21.7123C22.1686 12.059 22.3864 11.498 22.0497 11.19L12.3374 2.30875Z"
+                    fill="white" />
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-auto">
+          <a href="#index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+              alt="Icon 1">
+          </a>
+        </div>
+
+
       </div>
-      <div class="mx-auto">
-        <a href="index.html">
-          <img loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fbd06a3df914182d7460b662cbf599153f13a0878d942096f2ffd365abe5fc?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
-            alt="Icon 1">
-        </a>
-      </div>
-    </div>
+
+    </nav>
+    <!-- mavbar -->
+
   </header>
+
   <div class="flex flex-col items-center pb-14 mx-auto w-full bg-neutral-200 max-sm:px-10 max-w-[1428px]">
     <div class="mt-7 text-3xl font-bold tracking-wide text-center text-black max-sm:text-2xl">
       Alur Pemesanan
@@ -83,7 +111,7 @@
       Wujudkan Pakaian Impian Anda dalam 6 Langkah Mudah
     </div>
     <div
-      class="z-10 shadow-lg items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]">
+      class="z-10 items-center px-8 py-6 mt-8 max-w-full text-2xl font-bold tracking-wide text-center text-white whitespace-nowrap rounded-md shadow-sm bg-teal-950 w-[400px] max-sm:text-base max-sm:w-[200px]">
       Desain
     </div>
     <div
